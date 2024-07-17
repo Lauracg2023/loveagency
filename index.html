@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOVE AGENCY</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #807878;
+        }
+        header {
+            background-color: #000000;
+            color: rgb(255, 0, 0);
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .banner {
+            background-image: url('banner.jpg');
+            background-size: cover;
+            background-position: center;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding-top: 100px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            position: relative;
+            padding-bottom: 50px; /* Extra padding at the bottom to accommodate the image */
+        }
+        .banner img {
+            margin-top: 20px;
+            max-width: 80%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .section {
+            padding: 40px 20px;
+            background-color: white;
+            margin: 20px auto;
+            max-width: 1200px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .services div, .testimonials div {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #e7f3ff;
+            border-left: 5px solid #ff0000;
+        }
+        .destinations div {
+            display: inline-block;
+            width: 22%;
+            margin: 1.5%;
+            position: relative;
+        }
+        .destinations img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .destinations div span {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact label {
+            margin-top: 10px;
+        }
+        .contact input, .contact textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact input[type="submit"] {
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LOVE AGENCY</h1>
+    </header>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#testimonials">Opinions</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="banner">
+        ¡Discover the world with us as a couple!
+        <img src="imagenes/loveagency.jpeg" alt="Imagen del mundo">
+    </div>
+    <div class="section services" id="services">
+        <h2>Packages</h2>
+        <div>IBIZA</div>
+        <ul>
+            <li>Hotel Axel Beach Ibiza: 1'200.000</li>
+            <li>Aireuropa: 3'990.000</li>
+            <li>Iberia: 2'990.000</li>
+            <li><strong>TOTAL: 8'000.000 or 9'000.000</strong></li>
+        </ul>
+        <div>DUBAI</div>
+        <ul>
+            <li>Hotel The Palm: 1'580.000</li>
+            <li>Emirates: 7'000.000</li>
+            <li><strong>TOTAL: 15´580.000</strong></li>
+        </ul>
+        <div>PARIS</div>
+        <ul>
+            <li>Mode Paris Aparthotel: 2'500.000</li>
+            <li>Iberia: 3'189.000</li>
+            <li>Motel Paradise: 20% discount</li>
+            <li><strong>TOTAL: 8'878.000</strong></li>
+        </ul>
+        <div>ITALIA</div>
+        <ul>
+            <li>Hotel Hilton Garden: 1'578.000</li>
+            <li>Vuelo: 3'800.000</li>
+            <li>Motel Amazing House: 30% discount</li>
+            <li><strong>TOTAL: 10'000.000</strong></li>
+        </ul>
+    </div>
+    <div class="section destinations" id="destinations">
+        <h2>Destinations</h2>
+        <div>
+            <img src="imagenes/ibiza.jpeg" alt="Ibiza">
+            <span>Ibiza</span>
+        </div>
+        <div>
+            <img src="imagenes/dubai.jpeg" alt="Dubai">
+            <span>Dubai</span>
+        </div>
+        <div>
+            <img src="imagenes/paris.jpeg" alt="Paris">
+            <span>Paris</span>
+        </div>
+        <div>
+            <img src="imagenes/italy.jpeg" alt="Italia">
+            <span>Italy</span>
+        </div>
+    </div>
+    <div class="section testimonials" id="testimonials">
+        <h2>Opinions</h2>
+        <div>"Best trip of my life!" - Ana</div>
+        <div>"Excellent service and amazing destinations."  - Carlos</div>
+        <div>"I will definitely travel with them again." - María</div>
+    </div>
+    <div class="section contact" id="contact">
+        <h2>Contact</h2>
+        <h3>INSTAGRAM: @loveagency_ </h3>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">E-mail address:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Travel Agency. All rights reserved.</p>
+    </footer>
+</body>
+</html>
